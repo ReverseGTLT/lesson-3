@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>autosale.ua/registration</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">
+            <a href="../index.html">autosale.ua</a>
+            <a href="registration.html">Регистрация</a>
+            <a href="authorization.html">Авторизация</a>
+        </div>
+
+        <div class="link_main">
+            <div class="bg_r">
+                <p>Поиск</p>
+                <form action="https://tests.fomenko.top/echo/index.php" method="post" class="form">
+                    <div>
+                        <label for="body_type">Тип кузова</label>
+                        <select name="body_type" id="body_type">
+                            <option value="none" hidden>...</option>
+                            <option value="sedan">Седан</option>
+                            <option value="station_wagon">Универсал</option>
+                            <option value="crossover">Кроссовер</option>
+                            <option value="hatchback">Хэтчбек</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="car_brand">Марка авто</label>
+                        <select name="car_brand" id="car_brand">
+                            <option value="none" hidden>...</option>
+                            <option value="audi">Audi</option>
+                            <option value="mercedes-benz">Mercedes-Benz</option>
+                            <option value="bmw">BMW</option>
+                            <option value="zaz">ZAZ</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="country_of_origin">Страна производитель</label>
+                        <select name="country_of_origin" id="country_of_origin">
+                            <option value="none" hidden>...</option>
+                            <option value="de">Германия</option>
+                            <option value="ua">Украина</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="price_from">Цена (у.е.) от</label>
+                        <input id="price_from" type="number" name="price_from">
+                        <label for="price_to">до</label>
+                        <input id="price_to" type="number" name="price_to">
+                    </div>
+                    <div>
+                        <label for="age_from">Год выпуска от</label>
+                        <input id="age_from" type="number" name="age_from">
+                        <label for="age_to">до</label>
+                        <input id="age_to" type="number" name="age_to">
+                    </div>
+                    <div>
+                        <label for="condition">Состояние</label>
+                        <select multiple name="condition" id="condition" size="4">
+                            <option value="ideal">Идеал</option>
+                            <option value="broken">Битая</option>
+                            <option value="in_credit">В кредите</option>
+                            <option value="Uncleared">Нерастаможенная</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="fuel_type">Вид топлива</label>
+                        <select name="fuel_type" id="fuel_type">
+                            <option value="none" hidden>...</option>
+                            <option value="diesel">Дизель</option>
+                            <option value="petrol">Бензин</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="gearbox_type">Тип коробки передач</label>
+                        <select name="gearbox_type" id="gearbox_type">
+                            <option value="none" hidden>...</option>
+                            <option value="mechanical">Механика</option>
+                            <option value="automatic">Автомат</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="color_auto">Цвет</label>
+                        <select name="color_auto" id="color_auto">
+                            <option value="none" hidden>...</option>
+                            <option value="red">Красный</option>
+                            <option value="black">Черный</option>
+                            <option value="white">Белый</option>
+                            <option value="gray">Серый</option>
+                            <option value="wet_asphalt">Мокрый асфальт</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="comf">Комфорт</label>
+                        <select name="comf" id="comf">
+                            <option value="none" hidden>...</option>
+                            <option value="luxury">Люкс</option>
+                            <option value="conditioner">Кондиционер</option>
+                            <option value="interior">Кожаный салон</option>
+                        </select>
+                    </div>
+                    <div>
+                        <input type="submit" value="Отправить">
+                        <input type="reset" value="Сбросить">
+                    </div>
+                </form>
+
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
